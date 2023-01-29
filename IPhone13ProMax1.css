@@ -1,0 +1,88 @@
+@keyframes slide-in-top {
+  0% {
+    transform: translateY(-200px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+body {
+  margin: 0;
+  line-height: normal;
+}
+.conatct-us {
+  text-decoration: none;
+  position: absolute;
+  top: calc(50% - 59px);
+  left: 44px;
+  line-height: 30px;
+  color: inherit;
+  display: flex;
+  align-items: center;
+  width: 88.04px;
+  height: 21px;
+}
+.sign-up {
+  position: relative;
+  font-size: var(--font-size-base);
+  line-height: 24px;
+  font-weight: 500;
+  font-family: var(--font-inter);
+  color: var(--color-white);
+  text-align: center;
+}
+.a,
+.vector-icon {
+  position: absolute;
+  cursor: pointer;
+}
+.a {
+  border: 0;
+  padding: var(--padding-5xs) var(--padding-2xl) var(--padding-4xs)
+    var(--padding-3xl);
+  background-color: var(--color-green);
+  top: calc(50% - 0px);
+  right: 238.81px;
+  border-radius: var(--br-sm);
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.vector-icon {
+  height: 6.73%;
+  width: 5.14%;
+  top: 21.63%;
+  right: 8.48%;
+  bottom: 71.63%;
+  left: 86.38%;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+}
+.dpay-4-icon {
+  position: absolute;
+  top: 32px;
+  left: 234px;
+  width: 79px;
+  height: 72px;
+  object-fit: cover;
+}
+.iphone-13-pro-max-1 {
+  position: relative;
+  background-color: #403f3f;
+  width: 100%;
+  height: 208px;
+  overflow: hidden;
+  opacity: 0;
+  max-height: 90%;
+  text-align: left;
+  font-size: var(--font-size-base);
+  color: var(--color-gray-300);
+  font-family: var(--font-inter);
+}
+.iphone-13-pro-max-1.animate {
+  animation: 0.25s ease 0s 1 normal forwards slide-in-top;
+}
